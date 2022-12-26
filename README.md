@@ -12,4 +12,4 @@
 ### file 1.angelator312.txt
 ####  WARNING: example
 
-## LICENSE angelator312 angelator312(inc)
+## OWNER [angelator312](https://github.com/angelator312/) with help from [zaro](https://github.com/zaro/)

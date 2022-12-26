@@ -1,0 +1,5 @@
+.vscode
+app.js
+ignore
+*.dev.txt
+!**/index.*

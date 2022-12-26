@@ -20,7 +20,7 @@ async function main() {
     const defs = await readdef();
     const argv = process.argv;
     const argc = argv.length;
-    console.log(argc, argv);
+    
     if (argc < 3) {
         console.log("Usage: " + argv[1] + " <file>\n");
         return 1;
@@ -43,13 +43,13 @@ async function main() {
         let ipr1, ipr2,d2="";
         ipr1 = parseInt(e.substring(0, it));
         ipr2 = parseInt(e.substring(it + 1, ir));
-        console.log(ipr1, ipr2,d2,e,it,ir);
+        
         d2 += ls[ipr1].substring(0, ipr2);
-        console.log(ipr1, ipr2,d2,e,it,ir);
+        
         d2 += finddef(e[e.length - 1], defs) + "  ";
-        console.log(ipr1, ipr2,d2,e,it,ir);
+        
         d2 += ls[ipr1].substring(ipr2 + 2);
-        console.log(ipr1, ipr2,d2,e,it,ir);
+        
         ls2[ipr1] = d2;
     }
     for (let i = 0; i < ls2.length; i++) {
